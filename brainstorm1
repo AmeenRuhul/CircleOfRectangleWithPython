@@ -1,0 +1,30 @@
+import turtle
+
+def draw_sq(some_turtle):
+
+    for i in range(1,5):
+         some_turtle.forward(150)
+         some_turtle.right(90)
+
+def draw_art():
+     window = turtle.Screen()
+     window.bgcolor("yellow")
+
+     icon = turtle.Turtle()
+     icon.speed(5)
+
+     for i in range(1,36):
+          draw_sq(icon)
+          icon.right(10)
+
+
+     #cir =turtle.Turtle()
+     #cir.circle(100)
+
+     window.exitonclick()
+
+draw_art()
+
+
+
+
